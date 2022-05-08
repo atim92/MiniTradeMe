@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MiniTradeMe</string>
+
+    <string name="bottom_menu_title_latest_listings">Latest Listings</string>
+    <string name="bottom_menu_title_watchlist">Watchlist</string>
+    <string name="bottom_menu_title_my_trade_me">My Trade Me</string>
+
+    <string name="text_placeholder_my_trade_me">This is My Trade Me screen</string>
+    <string name="text_placeholder_watchlist">This is Watchlist screen</string>
 </resources>
