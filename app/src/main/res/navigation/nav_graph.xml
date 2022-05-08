@@ -8,16 +8,16 @@
     <fragment
         android:id="@+id/latestListingsFragment"
         android:name="com.tatam.minitrademe.ui.LatestListingsFragment"
-        android:label="latest_listings_fragment"
+        android:label="@string/bottom_menu_title_latest_listings"
         tools:layout="@layout/latest_listings_fragment" />
     <fragment
         android:id="@+id/myTradeMeFragment"
         android:name="com.tatam.minitrademe.ui.MyTradeMeFragment"
-        android:label="fragment_my_trade_me"
+        android:label="@string/bottom_menu_title_my_trade_me"
         tools:layout="@layout/fragment_my_trade_me" />
     <fragment
         android:id="@+id/watchlistFragment"
         android:name="com.tatam.minitrademe.ui.WatchlistFragment"
-        android:label="fragment_watchlist"
+        android:label="@string/bottom_menu_title_watchlist"
         tools:layout="@layout/fragment_watchlist" />
 </navigation>

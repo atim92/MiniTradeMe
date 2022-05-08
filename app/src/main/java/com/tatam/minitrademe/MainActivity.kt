@@ -2,20 +2,40 @@ package com.tatam.minitrademe
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.NavController
+import androidx.navigation.NavDestination
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
+import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.tatam.minitrademe.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding : ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val navController = this.findNavController(R.id.nav_fragment)
+        navController.addOnDestinationChangedListener(object : NavController.OnDestinationChangedListener{
+            override fun onDestinationChanged(
+                controller: NavController,
+                destination: NavDestination,
+                arguments: Bundle?
+            ) {
+                title = when (destination.id) {
+                    R.id.latestListingsFragment -> resources.getString(R.string.bottom_menu_title_latest_listings)
+                    R.id.watchlistFragment -> resources.getString(R.string.bottom_menu_title_watchlist)
+                    R.id.myTradeMeFragment -> resources.getString(R.string.bottom_menu_title_my_trade_me)
+                    else -> resources.getString(R.string.app_name)
+                }
+            }
+
+        })
+        binding.bottomNavigationView.setupWithNavController(navController)
     }
 }
-
-/*
-* 1. Nav component with all the required fragments
-* 2. List of sample items and
-* 3. Dagger Hilt + Retrofit
-* 4. Implement api call with use case, repo, viewmodel
-* 5. Unit tests, integration test, UI tests
-* 6. Put config keys, URLS into BuildConfig
-*
-* */
