@@ -1,4 +1,4 @@
-package com.tatam.minitrademe.ui
+package com.tatam.minitrademe.ui.fragments
 
 import android.os.Bundle
 import android.view.*
@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.tatam.minitrademe.R
 import com.tatam.minitrademe.databinding.LatestListingsFragmentBinding
+import com.tatam.minitrademe.ui.viewmodels.LatestListingsViewModel
 
 class LatestListingsFragment : Fragment() {
 

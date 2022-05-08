@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/latestListingsFragment"
-        android:name="com.tatam.minitrademe.ui.LatestListingsFragment"
+        android:name="com.tatam.minitrademe.ui.fragments.LatestListingsFragment"
         android:label="@string/bottom_menu_title_latest_listings"
         tools:layout="@layout/latest_listings_fragment" />
     <fragment
         android:id="@+id/myTradeMeFragment"
-        android:name="com.tatam.minitrademe.ui.MyTradeMeFragment"
+        android:name="com.tatam.minitrademe.ui.fragments.MyTradeMeFragment"
         android:label="@string/bottom_menu_title_my_trade_me"
         tools:layout="@layout/fragment_my_trade_me" />
     <fragment
         android:id="@+id/watchlistFragment"
-        android:name="com.tatam.minitrademe.ui.WatchlistFragment"
+        android:name="com.tatam.minitrademe.ui.fragments.WatchlistFragment"
         android:label="@string/bottom_menu_title_watchlist"
         tools:layout="@layout/fragment_watchlist" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.tatam.minitrademe.ui
+package com.tatam.minitrademe.ui.viewmodels
 
 import androidx.lifecycle.ViewModel
 

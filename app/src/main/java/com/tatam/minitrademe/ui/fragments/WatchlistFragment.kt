@@ -1,4 +1,4 @@
-package com.tatam.minitrademe.ui
+package com.tatam.minitrademe.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
