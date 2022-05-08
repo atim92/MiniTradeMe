@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="tasman_500">#148FE2</color>
+    <color name="feijoa_500">#29A754</color>
+    <color name="bluff_oyster_800_text_dark">#393531</color>
+    <color name="bluff_oyster_600_text_light">#85807B</color>
+
 </resources>
