@@ -10,7 +10,7 @@ import retrofit2.HttpException
 import java.io.IOException
 import javax.inject.Inject
 
-class GetLatestListingsUseCase  @Inject constructor(
+class GetLatestListingsUseCase @Inject constructor(
     private val repository: ListingsRepository
 ) {
 
@@ -20,7 +20,7 @@ class GetLatestListingsUseCase  @Inject constructor(
     }
 
     //To call use case as a function
-    operator fun invoke () : Flow<Resource<ListingResponse>> = flow {
+    operator fun invoke(): Flow<Resource<ListingResponse>> = flow {
         try {
             emit(Resource.Loading())
             val listings = repository.getLatestListings()

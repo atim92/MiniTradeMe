@@ -9,7 +9,7 @@ import com.tatam.minitrademe.databinding.FragmentWatchlistBinding
 
 class WatchlistFragment : Fragment() {
 
-    private lateinit var binding : FragmentWatchlistBinding
+    private lateinit var binding: FragmentWatchlistBinding
 
     companion object {
         @JvmStatic

@@ -39,7 +39,11 @@ class LatestListingsFragment : Fragment() {
     private fun setupUI() {
         //Lambda for clicking on listing item in case further action needed
         val openListingDetails = { listing: Listing ->
-            Toast.makeText(requireContext(), "Listing ID ${listing.listingId} Details Pressed!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                requireContext(),
+                "Listing ID ${listing.listingId} Details Pressed!",
+                Toast.LENGTH_SHORT
+            ).show()
         }
 
         //Setting up a list

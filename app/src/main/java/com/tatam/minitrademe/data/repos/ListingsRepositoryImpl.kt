@@ -6,7 +6,7 @@ import javax.inject.Inject
 
 class ListingsRepositoryImpl @Inject constructor(
     private val api: TradeMeService
-)  : ListingsRepository {
+) : ListingsRepository {
 
     override suspend fun getLatestListings(): ListingResponse {
         return api.retrieveListings()

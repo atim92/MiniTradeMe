@@ -38,15 +38,17 @@ class ListingAdapter(
                     .load(pictureHref)
                     //.placeholder(R.color.bluff_oyster_600_text_light)
                     .into(binding.listingThumbnail)
-                if(buyNowPrice != null && this.priceDisplay != null) {
+                if (buyNowPrice != null && this.priceDisplay != null) {
                     binding.listingBuyNowPrice.text = "$${buyNowPrice}"
                 }
-                if(this.isClassified == true) {
+                if (this.isClassified == true) {
                     binding.listingReservePrice.text = "$priceDisplay"
                 }
 
-                binding.listingBuyNowPrice.visibility = if(this.buyNowPrice != null) View.VISIBLE else View.GONE
-                binding.listingBuyNowText.visibility = if(this.buyNowPrice != null) View.VISIBLE else View.GONE
+                binding.listingBuyNowPrice.visibility =
+                    if (this.buyNowPrice != null) View.VISIBLE else View.GONE
+                binding.listingBuyNowText.visibility =
+                    if (this.buyNowPrice != null) View.VISIBLE else View.GONE
 
                 binding.listingContainer.setOnClickListener {
                     openListingDetails(this)

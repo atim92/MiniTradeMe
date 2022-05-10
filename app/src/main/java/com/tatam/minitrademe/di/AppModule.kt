@@ -52,7 +52,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideListingRepository(api : TradeMeService) : ListingsRepository {
+    fun provideListingRepository(api: TradeMeService): ListingsRepository {
         return ListingsRepositoryImpl(api)
     }
 }

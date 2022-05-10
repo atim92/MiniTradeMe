@@ -9,7 +9,7 @@ import com.tatam.minitrademe.databinding.FragmentMyTradeMeBinding
 
 class MyTradeMeFragment : Fragment() {
 
-    private lateinit var binding : FragmentMyTradeMeBinding
+    private lateinit var binding: FragmentMyTradeMeBinding
 
     companion object {
         @JvmStatic
