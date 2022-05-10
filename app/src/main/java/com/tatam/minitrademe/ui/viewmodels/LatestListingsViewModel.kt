@@ -33,7 +33,7 @@ class LatestListingsViewModel @Inject constructor(
             when (result) {
                 is Resource.Success -> {
                     _listingStateLiveData.value =
-                        ListingListState(listings = result.data?.list ?: emptyList())
+                        ListingListState(listings = result.data?.list?.take(20) ?: emptyList())
                 }
                 is Resource.Error -> {
                     _listingStateLiveData.value =
