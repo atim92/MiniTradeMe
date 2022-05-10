@@ -7,4 +7,5 @@
 
     <string name="text_placeholder_my_trade_me">This is My Trade Me screen</string>
     <string name="text_placeholder_watchlist">This is Watchlist screen</string>
+    <string name="listingthumbnail">listingThumbnail</string>
 </resources>
