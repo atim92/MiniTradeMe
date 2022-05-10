@@ -17,6 +17,12 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "nz.co.test.transactions.HiltTestRunner"
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+        buildConfigField"String", "CONSUMER_KEY", "${properties.getProperty('CONSUMER_KEY')}"
+        buildConfigField"String", "CONSUMER_SIGNATURE", "${properties.getProperty('CONSUMER_SIGNATURE')}"
+        buildConfigField"String", "CONSUMER_SIGNATURE_METHOD", "${properties.getProperty('CONSUMER_SIGNATURE_METHOD')}"
     }
 
     buildTypes {
