@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listingContainer">
+
+    <ImageView
+        android:id="@+id/listingThumbnail"
+        android:layout_width="@dimen/listing_image_width"
+        android:layout_height="@dimen/listing_image_height"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        android:contentDescription="@string/listingthumbnail" />
+
+    <TextView
+        android:id="@+id/listingLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/bluff_oyster_600_text_light"
+        app:layout_constraintStart_toEndOf="@+id/listingThumbnail"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Auckland" />
+
+    <TextView
+        android:id="@+id/listingTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/bluff_oyster_800_text_dark"
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/listingThumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/listingLocation"
+        tools:text="Aquarium Cubicle asdfasdfas  asdfasd asdf asd fasdf asd fasd f asdf" />
+
+    <TextView
+        android:id="@+id/listingBuyNowPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/bluff_oyster_800_text_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/listingBuyNowText"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="$600.00" />
+
+    <TextView
+        android:id="@+id/listingBuyNowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/bluff_oyster_600_text_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Buy Now" />
+
+    <TextView
+        android:id="@+id/listingReservePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/bluff_oyster_800_text_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/listingReserveStatus"
+        app:layout_constraintStart_toEndOf="@+id/listingThumbnail"
+        tools:text="$1,99" />
+
+    <TextView
+        android:id="@+id/listingReserveStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/bluff_oyster_600_text_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/listingThumbnail"
+        tools:text="Reserve Met" />
+</androidx.constraintlayout.widget.ConstraintLayout>

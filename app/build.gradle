@@ -67,4 +67,7 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
 
+    //image loading
+    implementation "com.squareup.picasso:picasso:2.5.2"
+
 }
